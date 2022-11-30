@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <script defer src="js/script.js"></script>
+  <script defer type="module" src="js/script.js"></script>
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -74,37 +74,43 @@
             
             <!-- TAB 1 -->
             <div id="tab-1" class="feature-info active">
-              <div class="feature-info-img-box">
-                <img src="images/illustration-features-tab-1.svg" alt="tab illustratoin 1">
-              </div>
-              <div class="feature-info-text">
-                <h3 class="heading-secondary">Bookmark in one click</h3>
-                <p class="section-subheading">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                <a class="btn btn-blue btn-feature" href="#">More Info</a>
+              <div class="feature-info-grid">
+                <div class="feature-info-img-box">
+                  <img src="images/illustration-features-tab-1.svg" alt="tab illustratoin 1">
+                </div>
+                <div class="feature-info-text">
+                  <h3 class="heading-secondary">Bookmark in one click</h3>
+                  <p class="section-subheading">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                  <a class="btn btn-blue btn-feature" href="#">More Info</a>
+                </div>
               </div>
             </div>
             
             <!-- TAB 2 -->
             <div id="tab-2" class="feature-info">
-              <div class="feature-info-img-box">
-                <img src="images/illustration-features-tab-1.svg" alt="tab illustratoin 1">
-              </div>
-              <div class="feature-info-text">
-                <h3 class="heading-secondary">Intelligent search</h3>
-                <p class="section-subheading">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                <a class="btn btn-blue btn-feature" href="#">More Info</a>
+              <div class="feature-info-grid">
+                <div class="feature-info-img-box">
+                  <img src="images/illustration-features-tab-2.svg" alt="tab illustratoin 1">
+                </div>
+                <div class="feature-info-text">
+                  <h3 class="heading-secondary">Intelligent search</h3>
+                  <p class="section-subheading">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                  <a class="btn btn-blue btn-feature" href="#">More Info</a>
+                </div>
               </div>
             </div>
             
             <!-- TAB 3 -->
             <div id="tab-3" class="feature-info">
-              <div class="feature-info-img-box">
-                <img src="images/illustration-features-tab-1.svg" alt="tab illustratoin 1">
-              </div>
-              <div class="feature-info-text">
-                <h3 class="heading-secondary">Share your bookmarks</h3>
-                <p class="section-subheading">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                <a class="btn btn-blue btn-feature" href="#">More Info</a>
+              <div class="feature-info-grid">
+                <div class="feature-info-img-box">
+                  <img src="images/illustration-features-tab-3.svg" alt="tab illustratoin 1">
+                </div>
+                <div class="feature-info-text">
+                  <h3 class="heading-secondary">Share your bookmarks</h3>
+                  <p class="section-subheading">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                  <a class="btn btn-blue btn-feature" href="#">More Info</a>
+                </div>
               </div>
             </div> 
             
@@ -164,7 +170,7 @@
           <div class="question-box">
             <div class="question">
               <p class="question-text">What is Bookmark?</p>
-              <img src="images/icon-arrow.svg" alt="caret down icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
             </div>
             <div class="answer">
               <p class="answer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
@@ -172,10 +178,10 @@
           </div>
           
           <!-- QUESTION 2 -->
-          <div class="question-box active">
+          <div class="question-box">
             <div class="question">
               <p class="question-text">How can I request a new browser?</p>
-              <img src="images/icon-arrow.svg" alt="caret down icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
             </div>
             <div class="answer">
               <p class="answer-text">  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
@@ -186,7 +192,7 @@
           <div class="question-box">
             <div class="question">
               <p class="question-text">Is there a mobile app?</p>
-              <img src="images/icon-arrow.svg" alt="caret down icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
             </div>
             <div class="answer">
               <p class="answer-text">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
@@ -197,7 +203,7 @@
           <div class="question-box">
             <div class="question">
               <p class="question-text">What about other Chromium browsers?</p>
-              <img src="images/icon-arrow.svg" alt="caret down icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
             </div>
             <div class="answer">
               <p class="answer-text"> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
@@ -213,8 +219,12 @@
       <div class="container cta-container">
         <p class="cta-subtitle">35,000+ already joined</p>
         <h2 class="heading-secondary">Stay up-to-date with what we’re doing</h2>
-        <form class="cta-form" name="cta-form" action="/">
-          <input class="email" type="text" name="email" id="email" placeholder="Enter your email address">
+        
+        <form id="cta-form" class="cta-form" name="cta-form" action="/">
+          <div class="input-container">
+            <input class="email" type="text" name="email" id="email" placeholder="Enter your email address">
+            <p class="error-message">Error</p>
+          </div>
           <button class="btn btn-red btn-cta">Contact Us</button>
         </form>
       </div>
