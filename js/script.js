@@ -94,7 +94,7 @@ const fv = new FormValidator('#cta-form', fHandler)
 //
 // in this case, if the input is empty... then an error message is thrown
 
-fv.register("#email", check, document.querySelector('.error-message'))
+fv.register("#email", check, document.querySelector('.input-container'))
 
 
 
@@ -104,3 +104,17 @@ fv.register("#email", check, document.querySelector('.error-message'))
 //   inputBox.classList.remove('error')
 // })
 
+
+//////////////////////////
+// MOBILE NAVIGATION
+//////////////////////////
+
+const btn = document.querySelector('.btn-mobile-nav')
+
+btn.addEventListener('click', () => {
+  const nav = document.querySelector('.nav-header')
+
+  btn.querySelector('.hamburger').classList.toggle('hidden')
+  btn.querySelector('.close').classList.toggle('hidden')
+  nav.classList.toggle('open')
+})

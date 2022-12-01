@@ -27,11 +27,11 @@ export default class FormValidator {
 
       
       if(!hideErrors) {
-        errorElement.textContent = error || ''
+        errorElement.querySelector('.error-message').textContent = error || ''
         if(!pass) {
-          this.form.classList.add('error')
+          errorElement.classList.add('error')
         } else {
-          this.form.classList.remove('error') 
+          errorElement.classList.remove('error') 
         }
       }
 
