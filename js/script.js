@@ -15,23 +15,12 @@ function removeActive(elements) {
 tabsContainer.addEventListener('click', (e) => {
   e.preventDefault();
 
-  const tab = e.target;
   removeActive(tabs);
-  tab.classList.add('active');
+  e.target.classList.add('active');
 
   removeActive(info);
+  document.getElementById(`tab-${e.target.dataset.tab}`).classList.add('active');
 
-  if(tab.classList.contains("tab1")) {
-    document.querySelector('#tab-1').classList.add('active')
-  }
-
-  if(tab.classList.contains("tab2")) {
-    document.querySelector('#tab-2').classList.add('active')
-  }
-  
-  if(tab.classList.contains("tab3")) {
-    document.querySelector('#tab-3').classList.add('active')
-  }
 })
 
 // tabs.forEach((tab) => {
