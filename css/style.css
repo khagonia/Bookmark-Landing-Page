@@ -103,6 +103,17 @@ body {
   color: hsl(229, 31%, 21%)
 }
 
+.section {
+  transition: 
+    opacity 1s,
+    transform 1s;
+}
+
+.section.section-hidden {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
 /**************************/
 /** HEADER NAV
 /**************************/

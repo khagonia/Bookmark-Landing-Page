@@ -16,9 +16,9 @@ export default class FormValidator {
     return this.inputsWithErrors.size > 0;
   }
 
-  register(field_selector, check, error_element) {
+  register(field_selector, check, error_element='') {
     const inputField = this.form.querySelector(field_selector)
-    const errorElement = error_element
+    const errorElement = document.querySelector(error_element)
 
     const execute = (hideErrors) => {
       const {pass, error} = check(inputField.value, inputField)
@@ -44,6 +44,6 @@ export default class FormValidator {
     }
 
     inputField.addEventListener('change', () => execute())
-    execute(true)
+    execute(true) // hide errors upon initialization
   }
 }
